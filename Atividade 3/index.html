@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API's</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>O que são API's</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#tipos">Tipos de APIs</a></li>
+                <li><a href="#ferramentas">Ferramentas de Teste</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <h3>Artigos relacionados</h3>
+            <p><a href="https://aws.amazon.com/pt/what-is/api">Amazon Web Service</a></p>
+            <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/API">APIs WEB</a></p>
+        </aside>
+
+        <section>
+            <h2 id="introducao"><u>Introdução a APIs</u></h2>
+            <article>
+                <p>
+                    As <strong><abbr title="Frameworks Teste">APIs (Interfaces de Programação de Aplicação)</abbr></strong> são mecanismos que possibilitam a
+                    comunicação entre
+                    diferentes componentes de software por meio de protocolos e especificações padronizados.
+                </p>
+                <p>
+                    Um exemplo comum é encontrado nos sistemas meteorológicos: um instituto meteorológico armazena dados
+                    climáticos diários, e aplicativos de previsão do tempo, como os de smartphones, acessam essas
+                    informações em tempo real por meio de uma API. Nesse contexto, "aplicação" refere-se a qualquer
+                    <i>software</i> com uma função específica, enquanto a API atua como um intermediário, permitindo que
+                    diferentes sistemas interajam de forma eficiente.
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <h2 id="tipos"><u>Tipos de APIs</u></h2>
+            <article>
+                <p>As APIs podem ser classificadas de acordo com sua estrutura e propósito. Entre os principais tipos, destacam-se:</p>
+                <ol>
+                    <li>
+                        <strong>APIs SOAP (Simple Object Access Protocol):</strong> Utilizam o protocolo SOAP para a troca de mensagens entre cliente e servidor, geralmente no formato XML. Embora tenham sido amplamente utilizadas no passado, são menos flexíveis em comparação com alternativas mais modernas.
+                    </li>
+                    <li>
+                        <strong>APIs RPC (Remote Procedure Call):</strong> Permitem que o cliente solicite a execução de um procedimento remoto no servidor, que retorna a resposta correspondente. São frequentemente usadas em sistemas distribuídos para invocar funções remotamente.
+                    </li>
+                    <li>
+                        <strong>APIs WebSocket:</strong> Facilitam a comunicação bidirecional em tempo real entre cliente e servidor. Diferentemente das APIs tradicionais, permitem que o servidor envie mensagens ativamente para os clientes, tornando a comunicação mais eficiente. O formato JSON é comumente utilizado para a transmissão de dados.
+                    </li>
+                    <li>
+                        <strong>APIs REST (Representational State Transfer):</strong> São as mais populares atualmente devido à sua flexibilidade e simplicidade. Baseadas em uma arquitetura que permite interações eficientes entre cliente e servidor, as APIs REST são amplamente empregadas em serviços web modernos.
+                    </li>
+                </ol>
+            </article>
+        </section>
+
+        <section>
+            <h2 id="ferramentas"><u>Ferramentas para Testes</u></h2>
+            <article>
+                <p>Diversas ferramentas auxiliam na validação e teste de APIs, especialmente as de WebSocket. Algumas das mais utilizadas incluem:</p>
+                <table border="2">
+                    <thead>
+                        <tr>
+                            <th>Ferramenta</th>
+                            <th>Utilização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PieSocket</td>
+                            <td>Plataforma que oferece um serviço de WebSocket gerenciado, amplamente adotado por empresas. Conta com um testador de WebSocket intuitivo e compatível com servidores WebSocket não seguros.</td>
+                        </tr>
+                        <tr>
+                            <td>Insomnia</td>
+                            <td>Ferramenta poderosa e de fácil utilização para testar APIs, incluindo WebSockets. Suporta automação, integração com plug-ins e colaboração em projetos, oferecendo uma interface amigável.</td>
+                        </tr>
+                        <tr>
+                            <td>Postman</td>
+                            <td>Uma das plataformas mais conhecidas para criação e testes de APIs. Além de permitir requisições WebSocket, possui uma interface intuitiva e suporte para documentação detalhada, sendo ideal para desenvolvedores que buscam eficiência e agilidade.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Leonardo. Todos os direitos reservados</p>
+        </footer>
+    </main>
+</body>
+
+</html>
