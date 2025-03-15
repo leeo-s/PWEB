@@ -1,0 +1,188 @@
+body{
+    background-color: #ffffffb4;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a p{
+    color: gray;
+}
+
+a h2:hover, a h3:hover{
+    color: #e73c3c;
+}
+
+li a:hover{
+    color: #ccc;
+}
+
+header{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #e73c3c;
+    font-size: 26px;
+    margin: 0 0 0 0;
+}
+
+nav{
+    background-color: #e65e5e;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0px 0px 5px 0px;
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li:hover{
+    color: #CCC;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    height: auto;
+    
+}
+
+.noticias{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brasil, .economia{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 99%;
+    height: 460px;
+    display: flex;
+    align-items: center;
+}
+
+.brasil div, .economia div{
+    padding: 2px;
+}
+
+#noticias{
+    width: 80%;
+    height: 450px;
+}
+
+.brasil div div, .economia div div{
+    width: auto;
+    height: auto;
+}
+
+div .imagem{
+    width: 30%;
+    height: auto;
+}
+
+img{
+    width: 251px;
+    height: 400px;
+    object-fit: fill;
+}
+
+.tecnologia{
+    border: 1px solid black;
+    display: flex;
+    margin-top: 15px;
+    width: 99%;
+    height: 460px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tecnologia div{
+    padding: 2px;
+}
+
+.economia{
+    margin-top: 15px;
+}
+
+.noticias-rapidas{
+    border-left: 1px dotted black;
+    width: 20%;
+    text-align: center;
+}
+
+.esportes{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.esportes div{
+    padding: 10px 5px 5px 5px;
+}
+
+.mundo{
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.mundo div{
+    padding: 10px 5px 5px 5px;
+}
+
+.games{
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.games div{
+    padding: 10px 5px 5px 5px;
+}
+
+.brasil:target, .tecnologia:target, .economia:target, .esportes:target, .games:target, .mundo:target{
+    background-color: rgb(236, 123, 123);
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut{
+    0% { background-color: rgb(236, 123, 123); }
+    100% { background-color: white; }
+}
+
+.botao-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #e65e5e;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
