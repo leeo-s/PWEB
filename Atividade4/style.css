@@ -126,6 +126,8 @@ img{
     border-left: 1px dotted black;
     width: 20%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .esportes{
