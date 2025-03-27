@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando variáveis</title>
+
+    <script src="variaveis.js"></script>
+</head>
+<body>
+    <script>
+/*VARIÁVEIS GLOBAIS*/
+
+        var resultado;
+        var resultado2;
+        var resultado3;
+        var resultado4;
+        var resultado5 = "Conteúdo 5";
+        var resultado6 = "Conteúdo 6";
+
+        resultado = prompt("Qual é o seu nome?");
+
+        var teste = function(){
+            var resultado6; /*local - undefined*/
+
+            resultado5;/*local*/
+
+            resultado7 = "dentro da função";/*não existe global com esse nome, SEM VAR fica acessível globalmente*/
+
+            resultado3 = "mudei dentro da função";/*usando variável global*/
+
+            resultado5 = "Conteúdo 5 na função";
+
+            return "resultado da função";
+        };
+
+        resultado4 = teste(); /*atribuindo resultado da função*/
+
+        resultado7 = "fora da função";
+
+        alert("resultado="+ resultado + "\nresultado2="+ resultado2 +"\nresultado3="+ resultado3 +
+            "\nresultado4="+resultado4 + "\nresultado5="+ resultado5 + "\nresultado6="+resultado6 +
+            "\nresultado7=" + resultado7);
+
+            if(true){
+                var teste="conteúdo de teste";
+                let teste1="conteúdo de teste1";
+            }
+                alert("dentro do bloco" + teste);
+                alert("fora do bloco" + teste1); //não vai mostrar
+    </script>
+</body>
+</html>
