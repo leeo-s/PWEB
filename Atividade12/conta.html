@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 12 - Objetos</title>
+    <link rel="stylesheet" href="conta.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="conta-corrente">
+            <h1>Dados Conta Corrente</h1>
+            <label for="nomeCorrente">Nome Cliente:</label>
+            <input type="text" id="nomeCorrente">
+
+            <label for="correntistaCorrente">Correntista:</label>
+            <input type="text" id="correntistaCorrente">
+
+            <label for="bancoCorrente">Banco:</label>
+            <input type="text" id="bancoCorrente">
+
+            <label for="numContaCorrente">Número da Conta:</label>
+            <input type="text" id="numContaCorrente">
+
+            <label for="saldoCorrente">Saldo da Conta:</label>
+            <input type="text" id="saldoCorrente">
+
+            <label for="saldoEspecialCorrente">Saldo Especial:</label>
+            <input type="text" id="saldoEspecialCorrente">
+
+            <button id="btnCorrente">Enviar</button>
+        </div>
+
+        <div class="conta-poupanca">
+            <h1>Dados Conta Poupança</h1>
+            <label for="nomePoupanca">Nome Cliente:</label>
+            <input type="text" id="nomePoupanca">
+
+            <label for="correntistaPoupanca">Correntista:</label>
+            <input type="text" id="correntistaPoupanca">
+
+            <label for="bancoPoupanca">Banco:</label>
+            <input type="text" id="bancoPoupanca">
+
+            <label for="numContaPoupanca">Número da Conta:</label>
+            <input type="text" id="numContaPoupanca">
+
+            <label for="saldoPoupanca">Saldo da Conta:</label>
+            <input type="text" id="saldoPoupanca">
+
+            <label for="jurosPoupanca">Juros:</label>
+            <input type="text" id="jurosPoupanca">
+
+            <label for="dataVencimentoPoupanca">Data Vencimento:</label>
+            <input type="text" id="dataVencimentoPoupanca">
+
+            <button id="btnPoupanca">Enviar</button>
+        </div>
+
+        <div class="dados">
+            <div>
+                <h1>Conta Corrente:</h1>
+                <p id="dadosCorrente"></p>
+            </div>
+
+            <div>
+                <h1>Conta Poupança:</h1>
+                <p id="dadosPoupanca"></p>
+            </div>
+        </div>
+    </div>
+    <script src="conta.js"></script>
+</body>
+
+</html>
