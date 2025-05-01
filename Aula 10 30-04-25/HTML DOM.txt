@@ -1,0 +1,12 @@
+Quando uma página é carregada no navegador ela torna-se um object Document (DOM - Document Object Model).
+
+Tabela de Node Type:
+1 - nó de elemento
+2 - nó de atributo
+3 - nó de texto
+8 - nó de comentário
+
+Permite: 
+-Encontrar e definir o valor dos elementos da página
+-Manipular eventos para os controles de página
+

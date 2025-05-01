@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 13
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 600px;
+            max-height: 600px;
+        }
+
+        body {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Abra a Janela</h1>
+    <img id="imagem" src="images/janelafechada.png" onmousemove="abriu(this)" onmouseup="quebrou(this)"
+        onmouseout="fechou(this)">
+    <h2 id="texto">Janela Fechada</h2>
+    <script src="script.js"></script>
+</body>
+
+</html>
