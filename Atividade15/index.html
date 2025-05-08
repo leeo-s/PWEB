@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 15</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Formulário Principal</h1>
+        </div>
+
+        <form class="form-div" name="formulario1" id="formulario1" onsubmit="return validarDados();">
+            <div class="form-body">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="digite seu nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="digite seu email">
+
+                <label for="coments">Comentário:</label>
+                <textarea name="coments" id="coments" cols="50" rows="8" placeholder="deixe um comentário" input></textarea>
+            </div>
+
+            <div class="form-opinion">
+                <h3>Pesquisa:</h3>
+                <p>Primeira vez nesta página?</p>
+                <label for="opinion">Sim</label>
+                <input type="radio" name="opinion" value="sim" id="sim" required onchange="validarInput(this)">
+                <label for="opinion">Não</label>
+                <input type="radio" name="opinion" value="nao" id="nao" required onchange="validarInput(this)">
+            </div>
+
+            <div class="buttons">
+                <button>Enviar</button>
+                <button onclick="limparForm()">Limpar</button>
+            </div>
+        </form>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
