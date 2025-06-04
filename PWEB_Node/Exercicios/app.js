@@ -1,13 +1,9 @@
-let express = require('express');
-let app = express();
 let nome = 'Leonardo Silva';
-
 let string = require('./modulo1');
 
-app.set('view engine', 'ejs');
+let app = require('./app/config/server.js'); //carregando módulo do servidor
 
 app.listen(3000, function () {
-  console.log('Servidor express carregado!');
   console.log(string);
 });
 

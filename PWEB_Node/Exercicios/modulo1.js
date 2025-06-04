@@ -1,3 +1,3 @@
-let texto = 'Observe que essa mensagem vem do módulo';
+let texto = 'Servidor iniciado!';
 
 module.exports = texto;
