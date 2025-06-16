@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 50px;
+  background-color: #e5c02c;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  font-size: 12px;
+}
+
+.username {
+  font-size: 12px;
+}

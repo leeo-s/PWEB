@@ -1,0 +1,13 @@
+.container-app {
+  margin-top: 80px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link-app {
+  margin-left: 100px;
+  width: 80%;
+}
