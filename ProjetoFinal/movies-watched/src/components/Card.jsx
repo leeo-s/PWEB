@@ -19,7 +19,7 @@ const Card = ({ filme, salvar }) => {
         </Link>
         <FaHeart
           size={28}
-          id='btn-like'
+          id={filme.favorito ? 'btn-liked' : 'btn-like'}
           onClick={salvar}
           fill={filme.favorito ? 'red' : 'black'}
         />

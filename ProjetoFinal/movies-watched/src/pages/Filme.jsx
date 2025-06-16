@@ -21,7 +21,7 @@ const Filme = () => {
   };
 
   useEffect(() => {
-    const urlFilme = `${filmeURL}${id}?${chaveAPI}`;
+    const urlFilme = `${filmeURL}${id}?${chaveAPI}&&language=pt-BR`;
     getFilme(urlFilme);
   }, [id]);
 

@@ -23,7 +23,7 @@ const Favoritos = () => {
   return (
     <div className='container-favoritos'>
       <div className='namepage'>
-        <h3>Filmes Favoritos</h3>
+        <h3>Filmes Favoritos: {favoritos.length}</h3>
       </div>
       <div className='filmes-container'>
         {favoritos.length === 0 && <p>Não há filmes favoritos</p>}

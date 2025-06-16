@@ -31,7 +31,7 @@ const Busca = () => {
   };
 
   useEffect(() => {
-    const buscaURL = `${buscar}?${chaveApi}&query=${filmeBuscado}`;
+    const buscaURL = `${buscar}?${chaveApi}&query=${filmeBuscado}&&language=pt-BR`;
 
     getFilmesBuscado(buscaURL);
   }, [filmeBuscado]);

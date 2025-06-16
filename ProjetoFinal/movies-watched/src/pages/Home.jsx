@@ -39,7 +39,7 @@ const Home = () => {
 
   useEffect(() => {
     for (let x = 1; x <= 20; x++) {
-      const filmesURL = `${filmeURL}popular?${chaveAPI}&page=${x}`;
+      const filmesURL = `${filmeURL}popular?${chaveAPI}&page=${x}&language=pt-BR`;
 
       getFilmes(filmesURL);
     }
@@ -52,6 +52,8 @@ const Home = () => {
   const salvarFavoritos = filme => {
     const verifica = favoritos.some(fav => fav.id === filme.id);
     if (verifica) {
+      filme.favorito = false;
+      alert('Filme removido da lista de favoritos!');
       localStorage.removeItem('favoritos');
       setFavoritos(favoritos.filter(fav => fav.id !== filme.id));
     } else {
@@ -63,7 +65,7 @@ const Home = () => {
   return (
     <div className='container-home'>
       <div className='namepage'>
-        <h3>Lista de Filmes</h3>
+        <h3>Lista de Filmes: {filmes.length}</h3>
       </div>
       <div className='filmes-container'>
         {filmes.length === 0 && <p>Carregando filmes...</p>}

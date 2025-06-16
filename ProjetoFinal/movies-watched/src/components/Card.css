@@ -55,3 +55,8 @@ h2 {
   cursor: pointer;
   fill: red;
 }
+
+#btn-liked:hover {
+  cursor: pointer;
+  fill: black;
+}
