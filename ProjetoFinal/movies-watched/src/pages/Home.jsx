@@ -7,6 +7,7 @@ const chaveAPI = import.meta.env.VITE_CHAVE_API;
 
 const Home = () => {
   const [filmes, setFilmes] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [favoritos, setFavoritos] = useState(() => {
     const verifica = localStorage.getItem('favoritos');
     return verifica ? JSON.parse(verifica) : [];
@@ -35,6 +36,7 @@ const Home = () => {
 
       return listaAtualizada;
     });
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -68,15 +70,17 @@ const Home = () => {
         <h3>Lista de Filmes: {filmes.length}</h3>
       </div>
       <div className='filmes-container'>
-        {filmes.length === 0 && <p>Carregando filmes...</p>}
-        {filmes.length > 0 &&
+        {loading ? (
+          <p>Carregando filmes...</p>
+        ) : (
           filmes.map(filme => (
             <Card
               key={filme.id}
               filme={filme}
               salvar={() => salvarFavoritos(filme)}
             />
-          ))}
+          ))
+        )}
       </div>
     </div>
   );
