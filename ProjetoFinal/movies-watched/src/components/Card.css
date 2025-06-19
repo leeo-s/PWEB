@@ -3,60 +3,108 @@
   box-sizing: border-box;
 }
 
-.card {
-  margin: 10px 5px 10px 5px;
-  padding: 15px;
-  width: 200px;
-  height: 450px;
-  background-color: #d9d9d9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  border-radius: 15px;
+@media (max-width: 415px) {
+  .card {
+    margin: 10px 5px 10px 5px;
+    padding: 15px;
+    width: 150px;
+    height: 370px;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  #card-img {
+    max-width: 150px;
+    max-height: 250px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 4px 0 4px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #btn-detalhes {
+    width: 70%;
+    height: 30px;
+    background-color: #fcc216;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 7px;
+    font-size: 12px;
+  }
 }
 
-#card-img {
-  max-width: 150px;
-  max-height: 300px;
-}
+@media (min-width: 416px) {
+  .card {
+    margin: 10px 5px 10px 5px;
+    padding: 15px;
+    width: 200px;
+    height: 450px;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 15px;
+  }
 
-h2 {
-  font-size: 1.3rem;
-}
+  #card-img {
+    max-width: 150px;
+    max-height: 300px;
+  }
 
-.btn {
-  width: 100%;
-  padding: 8px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
+  h2 {
+    font-size: 1.3rem;
+  }
 
-#btn-detalhes {
-  width: 70%;
-  height: 30px;
-  background-color: #e8c641;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  border-radius: 7px;
-}
+  .btn {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-#btn-detalhes:hover {
-  background-color: #fcc216;
-  color: black;
-}
+  #btn-detalhes {
+    width: 70%;
+    height: 30px;
+    background-color: #e8c641;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 7px;
+  }
 
-#btn-like:hover {
-  cursor: pointer;
-  fill: red;
-}
+  #btn-detalhes:hover {
+    background-color: #fcc216;
+    color: black;
+  }
 
-#btn-liked:hover {
-  cursor: pointer;
-  fill: black;
+  #btn-like:hover {
+    cursor: pointer;
+    fill: red;
+  }
+
+  #btn-liked:hover {
+    cursor: pointer;
+    fill: black;
+  }
 }

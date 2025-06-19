@@ -12,10 +12,22 @@
   left: 0;
 }
 
-.title {
-  font-size: 12px;
+@media (max-width: 415px) {
+  .title {
+    font-size: 8px;
+  }
+
+  .username {
+    font-size: 8px;
+  }
 }
 
-.username {
-  font-size: 12px;
+@media (min-width: 416px) {
+  .title {
+    font-size: 12px;
+  }
+
+  .username {
+    font-size: 12px;
+  }
 }
